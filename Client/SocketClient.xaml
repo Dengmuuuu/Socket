@@ -1,0 +1,25 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="SocketClient" Height="450" Width="500" Background="Transparent" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize">
+    <Grid Loaded="Grid_Loaded">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="399" Margin="83,32,0,0" VerticalAlignment="Top" Width="328"  CornerRadius="8" Background="White" MouseMove="Border_MouseMove" />
+        <RichTextBox x:Name="richtextbox1" HorizontalAlignment="Left" Height="154" Margin="96,255,0,0" VerticalAlignment="Top" Width="302" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="{Binding Path=Show, Mode=TwoWay}"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="202,99,0,0" VerticalAlignment="Top" Width="75" Height="27" Click="Button_Click" Visibility="Collapsed"/>
+        <Label x:Name="lbl_close" Content="X" HorizontalAlignment="Left" Margin="380,32,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="2.222,1.24" MouseDown="Label_MouseDown" Cursor="Hand" MouseEnter="Lbl_close_MouseEnter" MouseLeave="Lbl_close_MouseLeave"/>
+        <ProgressBar x:Name="pbBar" HorizontalAlignment="Left" Height="24" Margin="120,202,0,0" VerticalAlignment="Top" Width="261"/>
+        <Label x:Name="lbl1" Content="当前已下载：" HorizontalAlignment="Left" Margin="107,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.15,-0.2" Height="29" Visibility="Collapsed"/>
+        <Label x:Name="lbl_download" Content="Label" HorizontalAlignment="Left" Margin="189,226,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <Label x:Name="lbl_downloadname" Content="" HorizontalAlignment="Left" Margin="120,141,0,0" VerticalAlignment="Top" Height="40" Width="261" FontSize="18" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>

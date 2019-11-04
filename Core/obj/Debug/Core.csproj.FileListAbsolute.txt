@@ -1,0 +1,6 @@
+C:\Users\19360\source\repos\Socket\Core\bin\Debug\Core.dll
+C:\Users\19360\source\repos\Socket\Core\bin\Debug\Core.pdb
+C:\Users\19360\source\repos\Socket\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\19360\source\repos\Socket\Core\obj\Debug\Core.dll
+C:\Users\19360\source\repos\Socket\Core\obj\Debug\Core.pdb
+C:\Users\19360\source\repos\Socket\Core\obj\Debug\Core.csprojAssemblyReference.cache
